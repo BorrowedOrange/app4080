@@ -10,10 +10,10 @@ class TestFunctions(unittest.TestCase):
     self.assertEqual(factorial(10), 3628800)
 
   def test_square(self):
-    self.assertEqual(square(2), 4)
-    self.assertEqual(square(5), 25)
-    self.assertEqual(square(-3), 9)
-    self.assertEqual(square(0), 0)
+    self.assertEqual(square(2.0), 4.0)
+    self.assertEqual(square(5.0), 25.0)
+    self.assertEqual(square(-3.0), 9.0)
+    self.assertEqual(square(0.0), 0.0)
 
 if __name__ == '__main__':
   unittest.main()
