@@ -9,7 +9,7 @@ def factorial(n):
 
 # Define the square calculation function
 def calculate_square(number):
-    return number ** 2
+    return number ** 3
 
 # Create a test class that inherits from unittest.TestCase
 class TestFactorialAndSquareFunctions(unittest.TestCase):
