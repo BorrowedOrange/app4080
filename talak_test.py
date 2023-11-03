@@ -1,23 +1,19 @@
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
+import unittest
+from week9 import factorial, square
 
-# Input from the user
-num = int(input("Enter a number:"))
+class TestFunctions(unittest.TestCase):
 
-# Check if the number is negative
-if num < 0:
-    print("Factorial is not defined for negative numbers.")
-else:
-    result = factorial(num)
-    print(f"The factorial of {num} is {result}")
+  def test_factorial(self):
+    self.assertEqual(factorial(0), 1)
+    self.assertEqual(factorial(1), 1) 
+    self.assertEqual(factorial(5), 120)
+    self.assertEqual(factorial(10), 3628800)
 
-# Input from the user
-number = float(input("Enter a number: "))
+  def test_square(self):
+    self.assertEqual(square(2), 4)
+    self.assertEqual(square(5), 25)
+    self.assertEqual(square(-3), 9)
+    self.assertEqual(square(0), 0)
 
-# Calculate the square
-square = number ** 2
-# Prints the result
-print(f"The square of {number} is {square}")
+if __name__ == '__main__':
+  unittest.main()
