@@ -13,3 +13,11 @@ if num < 0:
 else:
     result = factorial(num)
     print(f"The factorial of {num} is {result}")
+
+# Input from the user
+number = float(input("Enter a number: "))
+
+# Calculate the square
+square = number ** 2
+
+print(f"The square of {number} is {square}")
