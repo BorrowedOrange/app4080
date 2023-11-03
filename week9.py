@@ -1,3 +1,5 @@
+# Week 9 Lab Work
+
 def factorial(n):
     if n == 0:
         return 1
